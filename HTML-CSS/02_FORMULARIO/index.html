@@ -7,13 +7,62 @@
     <link rel="stylesheet" href="style.css" class="sty">
 </head>
 <body>
-    <header>
-        <h1>Formulário de Inscrição para Catequese</h1>
-    </header>
-    <section class="section-form">
-        <form>
+    <div class="container">
+        <header>
+            <h1>Formulário de Inscrição para Catequese</h1>
+        </header>
 
-        </form>
-    </section>
+        <section class="form-container">
+            <h2>Formulário</h2>
+            <form action="" method="post">
+                <div class="form-body">
+                    <h3> Faça rapidamente sua inscrição para a catequese! </h3>
+                    <p> Preencha seus dados e garanta sua vaga para a turma de 2026! </p>
+                    <div class="box-input">
+                        <label for="title">
+                            Nome <span class="required-field">*</span>:
+                        </label>
+                        <input type="text" name="title" placeholder="Digite seu nome completo" 
+                            required minlength="1" maxlength="30" >
+                    </div>
+                    <div class="box-input">
+                        <label for="idade">
+                            Idade <span class="required-field">*</span>:
+                        </label>
+                        <input type="number" name="idade" placeholder="Digite sua idade" 
+                            required minlength="1" maxlength="2" >
+                    </div>
+                    <div class="box-input" id="escolaridade-box">
+                        <p>
+                            Escolaridade <span class="required-field">*</span>:
+                        </p>
+
+                        <div>
+                            <input type="radio" name="escolaridade" value="F1" required >
+                            <label for="F1">Ensino Fundamental 1 Completo</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="escolaridade" value="F2" required >
+                            <label for="F2">Ensino Fundamental 2 Completo</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="escolaridade" value="EM" required >
+                            <label for="EM">Ensino Médio Completo</label>
+                        </div>
+                    </div>
+                    <div class="box-input">
+                        <label for="modalidade">
+                            Modalidade <span class="required-field">*</span>:
+                        </label>
+                        <select name="modalidade" id="modalidade">
+                            <option value="Catequese">Catequese</option>
+                            <option value="Crisma">Crisma</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Enviar Inscrição" class="submit-button">
+                </div>
+            </form>
+        </section>
+    </div>  
 </body>
 </html>
