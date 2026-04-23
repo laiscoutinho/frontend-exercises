@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#historia,
+#amando,
+#contato {
+    scroll-margin-top: 100px;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+}
+
+p {
+    color: #232a31;
+    font-size: 20px;
+}
+
+/* navbar */
+.navbar-container {
+    background-color: #232a31;
+    height: 80px;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.navbar-items ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-items a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+.navbar-items a:hover {
+    color: #ccc;
+}
+
+/* banner */
+.main-hero {
+    height: calc(100vh - 80px);
+    width: 100%;
+    padding: 10rem 0;
+    background-image: url("../assets/spiderman-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.main-hero h1,
+.main-hero p {
+    color: #fff;
+    text-align: center;
+    padding-top: 60px;
+    text-shadow: #333 3px  2px 3px;
+    font-weight: 600;
+}
+
+.main-hero h1 {
+    font-size: 100px;
+}
+
+.main-hero p {
+    font-size: 25px;
+}
+
+.page {
+    margin: 5rem 10rem;
+    gap: 3rem;
+}
+
+.main-historia {
+    gap: 10rem;
+}
+
+.main-historia h2 {
+    font-size: 50px;
+}
+
+footer {
+    background-color: #232a31;
+    height: 60px;
+    width: 100%;
+
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    padding-top: 60px;
+    text-shadow: #333 3px  2px 3px;
+    font-weight: 600;
+}
